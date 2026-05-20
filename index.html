@@ -34,11 +34,13 @@
 
     /* NAV */
     nav {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      z-index: 10;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 24px 48px;
-      border-bottom: 1px solid var(--blush);
+      padding: 28px 48px;
     }
 
     .nav-logo {
@@ -46,6 +48,7 @@
       font-size: 1.2rem;
       font-weight: 700;
       letter-spacing: 0.02em;
+      color: var(--white);
     }
 
     .nav-links {
@@ -60,6 +63,7 @@
       font-weight: 400;
       letter-spacing: 0.05em;
       text-transform: uppercase;
+      color: var(--white);
     }
 
     .nav-social {
@@ -73,27 +77,34 @@
       font-weight: 400;
       letter-spacing: 0.05em;
       text-transform: uppercase;
+      color: var(--white);
     }
 
     /* HERO */
     .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      min-height: 80vh;
-      align-items: center;
+      position: relative;
+      width: 100%;
+      height: 90vh;
+      overflow: hidden;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
     }
 
     .hero-text {
-      padding: 80px 48px 80px 80px;
-    }
-
-    .hero-eyebrow {
-      font-size: 0.85rem;
-      font-weight: 400;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--red);
-      margin-bottom: 24px;
+      position: absolute;
+      bottom: 48px;
+      left: 64px;
     }
 
     .hero-heading {
@@ -101,8 +112,7 @@
       font-size: clamp(2.8rem, 5vw, 4.2rem);
       font-weight: 700;
       line-height: 1.1;
-      color: var(--maroon);
-      margin-bottom: 28px;
+      color: var(--white);
     }
 
     .hero-tagline {
@@ -110,8 +120,8 @@
       font-weight: 300;
       line-height: 1.7;
       color: var(--black);
-      max-width: 480px;
-      margin-bottom: 40px;
+      max-width: 600px;
+      padding: 32px 64px 0;
     }
 
     .btn {
@@ -128,20 +138,6 @@
     }
 
     .btn:hover { background: var(--maroon); color: var(--white); }
-
-    .hero-image {
-      background: var(--blush);
-      height: 100%;
-      min-height: 80vh;
-      overflow: hidden;
-    }
-
-    .hero-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
 
     /* SECTIONS */
     section { padding: 96px 80px; }
@@ -328,17 +324,15 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero" style="padding:0;">
-    <div class="hero-text">
-      <h1 class="hero-heading">Hi, I'm Lavinia.</h1>
-      <p class="hero-tagline">I am excited about the future, and reinventing work.</p>
-      <a href="/start-here.html" class="btn">Start Here</a>
-    </div>
+  <section class="hero">
     <div class="hero-image">
-      <!-- Replace with: <img src="assets/lavinia.jpg" alt="Lavinia Iosub"> -->
       <img src="assets/lavinia.jpg" alt="Lavinia Iosub">
     </div>
+    <div class="hero-text">
+      <h1 class="hero-heading">Hi, I'm Lavinia.</h1>
+    </div>
   </section>
+  <p class="hero-tagline">I am excited about the future, and reinventing work.</p>
 
   <!-- ABOUT -->
   <section class="about">
