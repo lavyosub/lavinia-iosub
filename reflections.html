@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflections — Lavinia Iosub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Karla:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --white:#FFFFFF; --blush:#FAE8E8; --red:#E82020; --maroon:#3D0A0A; --black:#1A1A1A; }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Karla',sans-serif; font-weight:300; font-size:17px; color:var(--black); background:var(--white); line-height:1.8; }
+    a { color:inherit; text-decoration:none; }
+
+    nav { display:flex; align-items:center; justify-content:space-between; padding:24px 64px; border-bottom:1px solid var(--blush); }
+    .nav-logo { font-family:'Nunito',sans-serif; font-size:1.1rem; font-weight:800; color:var(--maroon); }
+    .nav-links { display:flex; gap:32px; list-style:none; }
+    .nav-links a { font-size:0.85rem; font-weight:400; letter-spacing:0.06em; text-transform:uppercase; color:var(--black); }
+    .nav-links a:hover { color:var(--red); }
+
+    .page-header { padding:80px 64px 48px; max-width:960px; }
+    .page-eyebrow { font-size:0.8rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--red); margin-bottom:16px; }
+    .page-heading { font-family:'Nunito',sans-serif; font-size:clamp(2rem,4vw,3rem); font-weight:800; color:var(--maroon); line-height:1.15; margin-bottom:16px; }
+    .page-subheading { font-size:1.05rem; color:var(--black); max-width:560px; }
+
+    .posts { max-width:960px; padding:0 64px 120px; }
+
+    .post-item {
+      display:grid;
+      grid-template-columns: 120px 1fr;
+      gap:32px;
+      align-items:start;
+      padding:36px 0;
+      border-bottom:1px solid var(--blush);
+    }
+    .post-item:hover .post-title { color:var(--red); }
+
+    .post-date {
+      font-size:0.8rem;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      color:var(--maroon);
+      padding-top:4px;
+      font-weight:400;
+    }
+
+    .post-title {
+      font-family:'Nunito',sans-serif;
+      font-size:1.25rem;
+      font-weight:800;
+      color:var(--maroon);
+      line-height:1.3;
+      margin-bottom:8px;
+      transition:color 0.15s;
+    }
+
+    .post-excerpt {
+      font-size:0.95rem;
+      line-height:1.7;
+      color:var(--black);
+      max-width:560px;
+    }
+
+    footer { background:var(--black); color:rgba(255,255,255,0.6); padding:40px 64px; text-align:center; font-size:0.85rem; }
+    footer a { color:rgba(255,255,255,0.6); }
+
+    @media(max-width:700px) {
+      nav { padding:20px 24px; }
+      .page-header, .posts { padding-left:24px; padding-right:24px; }
+      .post-item { grid-template-columns:1fr; gap:8px; }
+      footer { padding:40px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Lavinia Iosub</a>
+    <ul class="nav-links">
+      <li><a href="start-here.html">Start Here</a></li>
+      <li><a href="reflections.html">Reflections</a></li>
+      <li><a href="https://www.linkedin.com/in/laviniaiosub/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://laviniaiosub.substack.com" target="_blank">Substack</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <p class="page-eyebrow">Writing</p>
+    <h1 class="page-heading">Reflections</h1>
+    <p class="page-subheading">Essays on work, leadership, and what it means to build something that lasts.</p>
+  </div>
+
+  <div class="posts">
+
+    <a href="reflections/how-old-is-the-team-youre-leading.html" class="post-item">
+      <p class="post-date">Mar 2023</p>
+      <div>
+        <p class="post-title">How old is the team you're leading?</p>
+        <p class="post-excerpt">On nurturing teams toward healthy autonomy — and what it means to lead adults.</p>
+      </div>
+    </a>
+
+    <a href="reflections/how-old-are-you-at-work.html" class="post-item">
+      <p class="post-date">Feb 2023</p>
+      <div>
+        <p class="post-title">How old are you at work?</p>
+        <p class="post-excerpt">Traditional work structures kept us from growing up. The future of work asks us to finally do it.</p>
+      </div>
+    </a>
+
+    <a href="reflections/why-you-shouldnt-always-optimize-for-peak-performance.html" class="post-item">
+      <p class="post-date">Nov 2022</p>
+      <div>
+        <p class="post-title">Why you shouldn't always optimize for peak performance</p>
+        <p class="post-excerpt">The obsession with peak performance misses something important about how humans actually work.</p>
+      </div>
+    </a>
+
+    <a href="reflections/top-3-mistakes-remote-forced-companies-make-how-to-avoid-the.html" class="post-item">
+      <p class="post-date">Jul 2022</p>
+      <div>
+        <p class="post-title">Top 3 Mistakes Remote-Forced Companies Make & How to Avoid Them</p>
+        <p class="post-excerpt">Remote-forced is not remote-first. The distinction matters more than most companies realize.</p>
+      </div>
+    </a>
+
+    <a href="reflections/hot-off-the-press-working-remotely-seeing-humans-dont-exclud.html" class="post-item">
+      <p class="post-date">Apr 2022</p>
+      <div>
+        <p class="post-title">Working remotely & seeing humans don't exclude each other</p>
+        <p class="post-excerpt">The pandemic shaped a false impression. Remote work and human connection are not opposites.</p>
+      </div>
+    </a>
+
+    <a href="reflections/when-the-pandemic-started-i-made-a-vow.html" class="post-item">
+      <p class="post-date">Mar 2022</p>
+      <div>
+        <p class="post-title">When the pandemic started, I made a vow</p>
+        <p class="post-excerpt">Not one team member would lose their job or go without a salary. Here's how we kept that promise.</p>
+      </div>
+    </a>
+
+    <a href="reflections/jakartas-backstreet-money-changers-and-existing-in-two-world.html" class="post-item">
+      <p class="post-date">Mar 2022</p>
+      <div>
+        <p class="post-title">Jakarta's backstreet money changers and existing in two worlds</p>
+        <p class="post-excerpt">The thing you consider a nuisance might be the key that solves your problem.</p>
+      </div>
+    </a>
+
+    <a href="reflections/remembering-someone-special.html" class="post-item">
+      <p class="post-date">Mar 2022</p>
+      <div>
+        <p class="post-title">Remembering Someone Special</p>
+        <p class="post-excerpt">A tribute to Awesome Grandma.</p>
+      </div>
+    </a>
+
+    <a href="reflections/the-future-of-work-the-era-of-individual-sovereignty-infinit.html" class="post-item">
+      <p class="post-date">Feb 2022</p>
+      <div>
+        <p class="post-title">The Future Of Work: Individual Sovereignty, Infinite Leverage and Going Remote</p>
+        <p class="post-excerpt">Three forces reshaping what work means and who it belongs to.</p>
+      </div>
+    </a>
+
+    <a href="reflections/why-barack-obama-travelled-15687-km-to-sanur-to-write-but-i-.html" class="post-item">
+      <p class="post-date">Jan 2022</p>
+      <div>
+        <p class="post-title">Why Barack Obama travelled 15,687 km to Sanur to write, but I retreat somewhere else</p>
+        <p class="post-excerpt">On finding the conditions that make your best thinking possible.</p>
+      </div>
+    </a>
+
+    <a href="reflections/time-confetti-context-switching-four-ways-to-fight-back.html" class="post-item">
+      <p class="post-date">Dec 2021</p>
+      <div>
+        <p class="post-title">Time confetti & context switching: four ways to fight back</p>
+        <p class="post-excerpt">Practical moves against the fragmentation eating your focus.</p>
+      </div>
+    </a>
+
+    <a href="reflections/is-waiting-for-friday-the-only-way-to-keep-going.html" class="post-item">
+      <p class="post-date">Dec 2021</p>
+      <div>
+        <p class="post-title">Is waiting for Friday the only way to keep going?</p>
+        <p class="post-excerpt">What it means when the best part of your work week is the part where work stops.</p>
+      </div>
+    </a>
+
+    <a href="reflections/time-confetti-context-switching-the-silent-killers-of-joy-an.html" class="post-item">
+      <p class="post-date">Nov 2021</p>
+      <div>
+        <p class="post-title">Time confetti & context switching, the silent killers of joy and productivity</p>
+        <p class="post-excerpt">Naming the pattern that fragments your day before you can do anything about it.</p>
+      </div>
+    </a>
+
+    <a href="reflections/on-awe-and-unselfing.html" class="post-item">
+      <p class="post-date">Nov 2021</p>
+      <div>
+        <p class="post-title">On awe and 'unselfing'</p>
+        <p class="post-excerpt">What happens to the self when something is genuinely bigger than you.</p>
+      </div>
+    </a>
+
+    <a href="reflections/the-invisible-work.html" class="post-item">
+      <p class="post-date">Nov 2021</p>
+      <div>
+        <p class="post-title">The invisible work</p>
+        <p class="post-excerpt">The work that never makes it onto a to-do list — and why it costs more than we think.</p>
+      </div>
+    </a>
+
+    <a href="reflections/the-company-culture-deck-what-is-it-why-have-one-and-how-to-.html" class="post-item">
+      <p class="post-date">Nov 2021</p>
+      <div>
+        <p class="post-title">The company culture deck: what is it, why have one, and how to get started</p>
+        <p class="post-excerpt">Culture isn't what you say it is. It's what you write down and live by.</p>
+      </div>
+    </a>
+
+    <a href="reflections/how-the-pandemic-is-flipping-maslows-pyramid.html" class="post-item">
+      <p class="post-date">Oct 2021</p>
+      <div>
+        <p class="post-title">How the Pandemic is Flipping Maslow's Pyramid</p>
+        <p class="post-excerpt">When safety and belonging collapse at the same time, the hierarchy breaks.</p>
+      </div>
+    </a>
+
+    <a href="reflections/the-steady-hustle-build-with-passion-without-burning-out.html" class="post-item">
+      <p class="post-date">Oct 2021</p>
+      <div>
+        <p class="post-title">The Steady Hustle: Build With Passion Without Burning Out</p>
+        <p class="post-excerpt">Hustle culture got the energy right and the sustainability completely wrong.</p>
+      </div>
+    </a>
+
+    <a href="reflections/my-12-favorite-problems.html" class="post-item">
+      <p class="post-date">Sep 2021</p>
+      <div>
+        <p class="post-title">My 12 favorite problems</p>
+        <p class="post-excerpt">Feynman kept 12 open questions in his mind at all times. Here are mine.</p>
+      </div>
+    </a>
+
+    <a href="reflections/intrapreneurship-antifragility-not-wasting-a-good-crisis.html" class="post-item">
+      <p class="post-date">May 2020</p>
+      <div>
+        <p class="post-title">Intrapreneurship, Antifragility & Not Wasting a Good Crisis</p>
+        <p class="post-excerpt">What the best organizations did when everything fell apart — and what the rest can learn from it.</p>
+      </div>
+    </a>
+
+  </div>
+
+  <footer>
+    <p>Lavinia Iosub &nbsp;·&nbsp; <a href="mailto:lavinia@liv.it">lavinia@liv.it</a> &nbsp;·&nbsp; <a href="https://laviniaiosub.substack.com">Substack</a></p>
+  </footer>
+
+</body>
+</html>
