@@ -19,30 +19,61 @@
     .nav-links a { font-size:0.85rem; font-weight:400; letter-spacing:0.06em; text-transform:uppercase; color:var(--black); }
     .nav-links a:hover { color:var(--red); }
 
+    /* LAYOUT */
+    .page-content {
+      display:grid;
+      grid-template-columns: 1fr 260px;
+      gap:80px;
+      max-width:1100px;
+      padding:0 64px 120px;
+      align-items:start;
+    }
+
     .page-header { padding:80px 64px 48px; max-width:960px; }
     .page-eyebrow { font-size:0.8rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--red); margin-bottom:16px; }
     .page-heading { font-family:'Nunito',sans-serif; font-size:clamp(2rem,4vw,3rem); font-weight:800; color:var(--maroon); line-height:1.15; margin-bottom:16px; }
     .page-subheading { font-size:1.05rem; color:var(--black); max-width:560px; }
 
-    .posts { max-width:960px; padding:0 64px 120px; }
+    /* SIDEBAR */
+    .sidebar { position:sticky; top:40px; }
+    .sidebar img {
+      width:100%;
+      border-radius:16px;
+      display:block;
+      object-fit:cover;
+      object-position:center top;
+    }
+
+    /* POSTS */
+    .posts { }
 
     .post-item {
       display:grid;
-      grid-template-columns: 120px 1fr;
-      gap:32px;
+      grid-template-columns: 100px 1fr;
+      gap:24px;
       align-items:start;
-      padding:36px 0;
+      padding:32px 0;
       border-bottom:1px solid var(--blush);
+      border-left:3px solid transparent;
+      padding-left:16px;
+      margin-left:-16px;
+      transition:border-color 0.2s;
     }
+    .post-item:hover { border-left-color:var(--red); }
     .post-item:hover .post-title { color:var(--red); }
 
     .post-date {
-      font-size:0.8rem;
-      letter-spacing:0.08em;
+      font-size:0.75rem;
+      letter-spacing:0.1em;
       text-transform:uppercase;
       color:var(--maroon);
-      padding-top:4px;
+      background:var(--blush);
+      border-radius:999px;
+      padding:4px 10px;
+      display:inline-block;
       font-weight:400;
+      margin-top:4px;
+      white-space:nowrap;
     }
 
     .post-title {
@@ -91,6 +122,7 @@
     <p class="page-subheading">Essays on work, leadership, and what it means to build something that lasts.</p>
   </div>
 
+  <div class="page-content">
   <div class="posts">
 
     <a href="reflections/how-old-is-the-team-youre-leading.html" class="post-item">
@@ -252,6 +284,12 @@
         <p class="post-excerpt">What the best organizations did when everything fell apart — and what the rest can learn from it.</p>
       </div>
     </a>
+
+  </div>
+
+  <aside class="sidebar">
+    <img src="assets/lavinia-sidebar.jpg" alt="Lavinia Iosub">
+  </aside>
 
   </div>
 
